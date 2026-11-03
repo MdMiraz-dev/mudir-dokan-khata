@@ -1,0 +1,17 @@
+{
+  "name": "Remix Remix মুদির দোকান খাতা (Grocery Khata)",
+  "short_name": "মুদির খাতা",
+  "description": "মুদির দোকানের স্বয়ংক্রিয় বিক্রয় ও স্টক আপডেট, বাকির খাতা, এসএমএস রিমাইন্ডার, পিডিএফ রিপোর্ট এবং অফলাইন হিসাব ব্যবস্থা।",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#10b981",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
