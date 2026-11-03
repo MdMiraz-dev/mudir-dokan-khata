@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@layer base {
+  html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+    background-color: #FAF7F2;
+    color: #232323;
+    font-family: 'Hind Siliguri', 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+/* Custom warm scrollbars for Pinterest aesthetic */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #DEC8B3;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B2825C;
+}
+
+/* Perfect Single-Page A4 Print Styles */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 6mm 6mm;
+  }
+
+  html,
+  body {
+    background: #ffffff !important;
+    color: #0f172a !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    min-height: auto !important;
+  }
+
+  #root,
+  .min-h-screen,
+  main {
+    padding: 0 !important;
+    margin: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  header,
+  nav,
+  footer,
+  aside,
+  .no-print,
+  button:not(.print-include) {
+    display: none !important;
+  }
+
+  .resume-single-page-print {
+    box-shadow: none !important;
+    border: none !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    page-break-after: avoid !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+}
