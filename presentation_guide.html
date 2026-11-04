@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>মুদির দোকান খাতা — প্রেজেন্টেশন ও ভাইভা গাইডলাইন</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 14mm 16mm;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Hind Siliguri', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: #FAF7F2;
+      color: #232323;
+      line-height: 1.6;
+      padding: 24px;
+      font-size: 14.5px;
+    }
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 36px 42px;
+      border-radius: 20px;
+      box-shadow: 0 4px 25px rgba(0,0,0,0.06);
+      border: 1px solid #E8DFD3;
+    }
+    .header {
+      text-align: center;
+      border-bottom: 2px solid #E8DFD3;
+      padding-bottom: 20px;
+      margin-bottom: 24px;
+    }
+    .badge {
+      display: inline-block;
+      background-color: #F5EEE7;
+      color: #83593B;
+      border: 1px solid #DEC4AD;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 14px;
+      border-radius: 999px;
+      margin-bottom: 10px;
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: 700;
+      color: #83593B;
+      margin-bottom: 6px;
+    }
+    .subtitle {
+      font-size: 13px;
+      color: #666;
+    }
+    h2 {
+      font-size: 17px;
+      font-weight: 700;
+      color: #222;
+      background-color: #F9F6F0;
+      border-left: 4px solid #B2825C;
+      padding: 8px 12px;
+      border-radius: 6px;
+      margin-top: 24px;
+      margin-bottom: 12px;
+    }
+    h3 {
+      font-size: 15px;
+      font-weight: 700;
+      color: #83593B;
+      margin-top: 14px;
+      margin-bottom: 6px;
+    }
+    p {
+      margin-bottom: 10px;
+      text-align: justify;
+    }
+    ul {
+      margin-left: 20px;
+      margin-bottom: 12px;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+    .highlight-box {
+      background-color: #FFFDF9;
+      border: 1px solid #EADCCF;
+      border-radius: 12px;
+      padding: 14px 18px;
+      margin: 12px 0;
+    }
+    .highlight-box.primary {
+      background-color: #FBF6F0;
+      border-left: 4px solid #83593B;
+    }
+    .qna-card {
+      background-color: #ffffff;
+      border: 1px solid #EAE3D9;
+      border-radius: 10px;
+      padding: 12px 16px;
+      margin-bottom: 12px;
+      page-break-inside: avoid;
+    }
+    .qna-question {
+      font-weight: 700;
+      color: #9A5B2D;
+      font-size: 14.5px;
+      margin-bottom: 5px;
+    }
+    .qna-answer {
+      color: #333;
+      font-size: 14px;
+    }
+    .btn-print {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background-color: #83593B;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 15px;
+      font-weight: 700;
+      border-radius: 999px;
+      cursor: pointer;
+      box-shadow: 0 6px 20px rgba(131, 89, 59, 0.4);
+      font-family: inherit;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+      z-index: 9999;
+    }
+    .btn-print:hover {
+      background-color: #6E472A;
+      transform: translateY(-2px);
+    }
+    @media print {
+      body {
+        background-color: #ffffff !important;
+        padding: 0 !important;
+        font-size: 12.5pt;
+        line-height: 1.45;
+      }
+      .container {
+        box-shadow: none !important;
+        border: none !important;
+        padding: 0 !important;
+        max-width: 100% !important;
+      }
+      .btn-print {
+        display: none !important;
+      }
+      h2 {
+        page-break-after: avoid;
+      }
+      .qna-card {
+        page-break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <button class="btn-print" onclick="window.print()">
+    <span>🖨️ এক ক্লিকে পিডিএফ সেভ করুন (Save as PDF)</span>
+  </button>
+
+  <div class="container">
+    <div class="header">
+      <span class="badge">প্রজেক্ট প্রেজেন্টেশন ও টেকনিক্যাল ভাইভা প্রস্তুতি</span>
+      <h1>মুদির দোকান খাতা (Grocery Khata)</h1>
+      <p class="subtitle">
+        <strong>সফটওয়্যার আর্কিটেকচার, ব্যাকএন্ড-ফ্রন্টএন্ড টেকনোলজি, ডেটাবেজ স্টোরেজ ও প্রশ্নোত্তর</strong><br>
+        নির্মাতা ও উপস্থাপক: <strong>মেরাজুল ইসলাম (Merajul Islam)</strong>
+      </p>
+    </div>
+
+    <h2>১. প্রজেক্টের সংক্ষিপ্ত পরিচয় ও মূল উদ্দেশ্য</h2>
+    <p>
+      <strong>পটভূমি:</strong> বাংলাদেশের হাজার হাজার মুদি দোকানদার প্রতিদিন কাগজের বাকির খাতা ও স্মারক মেমো ব্যবহারে বড় ধরণের আর্থিক জটিলতায় পড়েন। খাতা ভিজে যাওয়া, ছেঁড়া, হিসাবের গড়মিল এবং বাকি টাকার সঠিক তাগাদা না থাকায় প্রতি বছর বিপুল অর্থ অনাদায়ী থেকে যায়।
+    </p>
+    <p>
+      <strong>মূল সমাধান:</strong> <em>"মুদির দোকান খাতা"</em> একটি পূর্ণাঙ্গ, স্বয়ংক্রিয় ও মোবাইল-ফার্স্ট ডিজিটাল প্ল্যাটফর্ম—যা সাধারণ মুদি দোকানদারদের আঙুলের ডগায় ক্যাশ কাউন্টার (POS), বাকির খাতা, পণ্য স্টক ব্যবস্থাপনা, এসএমএস রিমাইন্ডার এবং কৃত্রিম বুদ্ধিমত্তা (AI) দিয়ে পাইকারি বাজার দরের হালনাগাদ সুবিধা এনে দেয়।
+    </p>
+
+    <h2>২. সিস্টেম আর্কিটেকচার ও টেকনোলজি স্ট্যাক (Architecture)</h2>
+    
+    <div class="highlight-box">
+      <h3>💻 ফ্রন্টএন্ড টেকনোলজি (Frontend Stack):</h3>
+      <ul>
+        <li><strong>React 19:</strong> ইন্টারফেসের অতি দ্রুত রেন্ডারিং এবং কম্পোনেন্ট ভিত্তিক আধুনিক আর্কিটেকচার।</li>
+        <li><strong>TypeScript 5.7:</strong> সম্পূর্ণ টাইপ-সেফ কোডবেজ, যা রানটাইম ক্র্যাশ ও ডাটা মিসম্যাচ দূর করে।</li>
+        <li><strong>Vite 6:</strong> অত্যন্ত দ্রুতগামী আধুনিক ফ্রন্টএন্ড বিল্ড টুল।</li>
+        <li><strong>Tailwind CSS v4:</strong> মোবাইল ও ডেস্কটপে আরামদায়ক Pinterest-ওয়ার্ম থিমের নান্দনিক ডিজাইন।</li>
+        <li><strong>Web Speech API:</strong> মুখে কথা বলে পণ্য কার্টে যোগ করার আধুনিক ব্রাউজার স্পিচ রিকগনিশন।</li>
+        <li><strong>Recharts & Lucide Icons:</strong> দৈনিক/মাসিক আয়-ব্যয়ের গ্রাফিকাল এনালাইসিস ও ভেক্টর আইকন।</li>
+      </ul>
+    </div>
+
+    <div class="highlight-box">
+      <h3>⚙️ ব্যাকএন্ড টেকনোলজি (Backend Stack):</h3>
+      <ul>
+        <li><strong>Node.js & Express:</strong> নির্ভরযোগ্য ও হালকা সার্ভার ফ্রেমওয়ার্ক এবং এপিআই রাউটিং।</li>
+        <li><strong>tsx:</strong> কোনো বিল্ড স্টেপ ছাড়াই সরাসরি টাইপস্ক্রিপ্ট সার্ভার কোড চালানোর সুবিধা।</li>
+        <li><strong>Google GenAI SDK (@google/genai):</strong> গুগলের সর্বাধুনিক জেমিনি এআই মডেল (Gemini 3.5 Flash, 2.5 Flash ও 3.8 Live)-এর সাথে সরাসরি ইন্টিগ্রেশন।</li>
+        <li><strong>WebSocket Server (ws):</strong> লাইভ ভয়েস এআই সহকারীর সাথে রিয়েল-টাইম দ্বি-মুখী (Duplex) অডিও স্ট্রিমের জন্য ডেডিকেটেড সকেট।</li>
+        <li><strong>Server-Sent Events (SSE):</strong> এআই চ্যাটে দ্রুতগতির লাইভ টাইপিং রেসপন্স পাওয়ার ব্যাকএন্ড চ্যানেল।</li>
+      </ul>
+    </div>
+
+    <h2>৩. সবচেয়ে গুরুত্বপূর্ণ প্রশ্ন: "ডেটা কোথায় জমা থাকে?"</h2>
+    
+    <div class="highlight-box primary">
+      <p style="font-size: 15px; font-weight: 700; color: #83593B; margin-bottom: 6px;">
+        📌 মূল টেকনিক্যাল উত্তর: Client-Side Offline-First Architecture (HTML5 LocalStorage)
+      </p>
+      <p>
+        এই অ্যাপ্লিকেশনটি সম্পূর্ণ <strong>Client-Side Offline-First</strong> মেকানিজমে কাজ করে। মানুষ যখন দোকানে বিক্রি করে, বাকি হিসাব টোকে বা মালামাল স্টক করে—এই সমস্ত ডেটা ব্রাউজারের নিজস্ব সুরক্ষিত <strong>HTML5 LocalStorage API</strong>-তে সরাসরি JSON ফরম্যাটে সেভ থাকে।
+      </p>
+    </div>
+
+    <p><strong>আমাদের কোডবেজে যেভাবে ডেটা সংগঠিত থাকে:</strong></p>
+    <ul>
+      <li><code>grocer_products</code>: সমস্ত পণ্যের নাম, বাংলা নাম, ক্যাটাগরি, ক্রয়মূল্য, বিক্রয়মূল্য, মজুত পরিমাণ ও বারকোড।</li>
+      <li><code>grocer_customers</code>: প্রতিটি কাস্টমারের নাম, ফোন নাম্বার, ঠিকানা ও বর্তমান মোট বাকি (Total Due)।</li>
+      <li><code>grocer_sales</code>: প্রতিটি বিক্রয়ের ইনভয়েস নম্বর, বিক্রি হওয়া পণ্যের তালিকা, ডিসকাউন্ট, নগদ ও বাকি।</li>
+      <li><code>grocer_expenses</code>: দোকানের ভাড়া, কারেন্ট বিল, কর্মচারীর বেতন, চা-নাস্তা ইত্যাদির দৈনিক খরচ।</li>
+      <li><code>grocer_settings</code>: দোকানের নাম, ক্যাশ মেমোতে প্রিন্ট করার ঠিকানা, পিন কোড লক ও থিম।</li>
+    </ul>
+
+    <p><strong>টিচারকে কনভিন্স করার ৪টি মোক্ষম যুক্তি (কেন লোকালস্টোরেজ সেরা?):</strong></p>
+    <ul>
+      <li><strong>১. শতভাগ অফলাইন স্বাধীনতা:</strong> গ্রামের বা বাজারের মুদির দোকানে ইন্টারনেট চলে গেলেও বেচাকেনা বা ক্যাশ মেমো তৈরির কাজ এক সেকেন্ডের জন্যও আটকায় না।</li>
+      <li><strong>২. জিরো লেটেন্সি ও সুপার ফাস্ট:</strong> ক্লাউড সার্ভারের নেটওয়ার্কের জন্য এক সেকেন্ডও অপেক্ষা করতে হয় না, ক্লিক করলেই ইনস্ট্যান্ট হিসাব আপডেট।</li>
+      <li><strong>৩. সম্পূর্ণ ডেটা প্রাইভেসি ও নিরাপত্তা:</strong> দোকানদারের বকেয়া বা দৈনিক আয়ের তথ্য কোনো তৃতীয় পক্ষের সার্ভারে গিয়ে ফাঁস হয় না, তাঁর ডিভাইসেই সম্পূর্ণ নিরাপদে থাকে।</li>
+      <li><strong>৪. এক ক্লিকে ব্যাকআপ ও এক্সেল এক্সপোর্ট:</strong> সম্পূর্ণ ডেটা এক ক্লিকে JSON ফাইলে ব্যাকআপ ও রিস্টোর করা যায় এবং প্রয়োজনমতো Excel (.xlsx) ও PDF আকারে ডাউনলোড করা যায়।</li>
+    </ul>
+
+    <div class="highlight-box">
+      <strong>ভবিষ্যৎ ক্লাউড এক্সটেনশন (Future Scaling):</strong><br>
+      টিচার যদি জিজ্ঞেস করেন—<em>"ফোন চুরি হলে বা ব্রাউজার হিস্ট্রি মুছে দিলে কী হবে?"</em>—তখন বলবেন:<br>
+      <em>"আমাদের কোডবেজে অলরেডি Firebase Client SDK আর্কিটেকচার সেটআপ করা আছে। দোকানদার চাইলে সেটিংস থেকে এক ক্লিকে অফলাইন লোকাল ডাটা ক্লাউডে (Firebase Firestore) সুরক্ষিতভাবে ব্যাকআপ নিয়ে রাখতে পারবেন।"</em>
+    </div>
+
+    <h2>৪. মূল ফিচারের টেকনিক্যাল সারসংক্ষেপ</h2>
+    <ul>
+      <li><strong>ক্যাশ কাউন্টার (POS):</strong> পণ্যের বারকোড ক্যামেরা দিয়ে স্ক্যান করে বা সার্চ করে স্বয়ংক্রিয় স্টক মাইনাস, ডিসকাউন্ট সমন্বয় এবং থার্মাল পিওএস স্লিপ প্রিন্ট।</li>
+      <li><strong>বাকির খাতা (Due Khata):</strong> কার কত টাকা বাকি তার রিয়েল-টাইম ব্যালেন্স, টাকা আদায় এন্ট্রি, এবং এক ক্লিকে ফোনে বাংলা এসএমএস ও হোয়াটসঅ্যাপ রসিদ পাঠানো।</li>
+      <li><strong>বাংলা ভয়েস কার্ট (Voice Cart):</strong> মুখে "মিনিকেট চাল ২ কেজি", "সয়াবিন তেল ১ লিটার" বা "চিনি ৫০০ গ্রাম" বললেই আমাদের কাস্টম বাংলা পার্সার (voiceOrderParser.ts) স্বয়ংক্রিয়ভাবে বুঝে কার্টে যোগ করে এবং পুরুষ কণ্ঠে কনফার্মেশন দেয়।</li>
+      <li><strong>এআই বাজার দর ও উপদেষ্টা:</strong> কাওরান বাজার, খাতুনগঞ্জ ও টিসিবির রেট অনুযায়ী নিত্যপণ্যের পাইকারি দর যাচাইয়ের সুবিধা।</li>
+      <li><strong>মুনাফা এনালাইসিস:</strong> প্রতিটি চালানে লাভ হিসাব = [মোট বিক্রয় - ক্রয়মূল্য], এবং মাসের শেষে [মোট লাভ - দোকান খরচ] দিয়ে সঠিক নিট লাভ নির্ণয়।</li>
+    </ul>
+
+    <h2>৫. ভাইভাতে টিচারের শীর্ষ ১০টি সম্ভাব্য প্রশ্ন ও চটপটে উত্তর</h2>
+
+    <div class="qna-card">
+      <div class="qna-question">প্রশ্ন ১: তোমরা সাধারণ HTML/CSS/JS দিয়ে না বানিয়ে React 19 এবং TypeScript কেন বেছে নিলে?</div>
+      <div class="qna-answer"><strong>উত্তর:</strong> সাধারণ জাভাস্ক্রিপ্টে একটি জটিল ক্যাশ কাউন্টারে অনেকগুলো স্টেট (যেমন কার্টের পণ্য, ডিসকাউন্ট, বাকি হিসাব, স্টক আপডেট ও কাস্টমার ব্যালেন্স) একসাথে হ্যান্ডেল করতে গেলে কোড স্প্যাগেটি হয়ে ক্র্যাশ করার ঝুঁকি থাকে। React-এর স্টেট ও কম্পোনেন্ট বেসড আর্কিটেকচার এবং TypeScript-এর কড়া টাইপ-চেকিং সিস্টেম অ্যাপটিকে শতভাগ বাগ-মুক্ত ও প্রফেশনাল মান নিশ্চিত করেছে।</div>
+    </div>
+
+    <div class="qna-card">
+      <div class="qna-question">প্রশ্ন ২: ব্রাউজারের লোকালস্টোরেজে কত পরিমাণ হিসাব বা ডাটা রাখা সম্ভব?</div>
+      <div class="qna-answer"><strong>উত্তর:</strong> প্রতিটি আধুনিক ব্রাউজারে ডোমেন প্রতি লোকালস্টোরেজের সাইজ থাকে প্রায় ৫ থেকে ১০ মেগাবাইট (MB)। একটি মুদির দোকানে প্রতিদিন ৫০টি ট্রানজেকশন হলেও এক বছরের সমস্ত বিক্রয়, স্টক ও গ্রাহকের তথ্য মিলিয়ে মাত্র ২ থেকে ৩ মেগাবাইটের বেশি মেমোরি লাগে না। ফলে বছরের পর বছর সম্পূর্ণ নিরাপদে অফলাইনে হিসাব রাখা সম্ভব।</div>
+    </div>
+
+    <div class="qna-card">
+      <div class="qna-question">প্রশ্ন ৩: একজন গ্রাহক পুরোনো বাকি পরিশোধ করলে অ্যাপে হিসাব কীভাবে আপডেট হয়?</div>
+      <div class="qna-answer"><strong>উত্তর:</strong> বাকির খাতা থেকে যখন "টাকা আদায়" (Payment Received) এন্ট্রি দেওয়া হয়, তখন গ্রাহকের বর্তমান বকেয়া (totalDue) থেকে ওই টাকা বিয়োগ হয়ে যায় এবং আজকের ক্যাশ কালেকশন হিসেবে ড্যাশবোর্ডে যোগ হয়। পুরো হিসাব স্বয়ংক্রিয়ভাবে স্থানীয় স্টোরেজে আপডেট হয়ে যায়।</div>
+    </div>
+
+    <div class="qna-card">
+      <div class="qna-question">প্রশ্ন ৪: বাংলা ভয়েস কার্ট কীভাবে মুখের কথা বুঝতে পারে?</div>
+      <div class="qna-answer"><strong>উত্তর:</strong> এটি ব্রাউজারের বিল্ট-ইন Web Speech API ব্যবহার করে মানুষের মুখের অডিওকে টেক্সটে রূপান্তর করে। এরপর আমাদের নিজস্ব তৈরি করা অ্যালগরিদম (voiceOrderParser.ts) দিয়ে বাক্য থেকে পণ্যের নাম, পরিমাণ (যেমন: ২, ৫, আধা, দেড়) এবং একক (কেজি, লিটার, প্যাকেট) আলাদা করে উপযুক্ত পণ্যের সাথে মিলিয়ে সরাসরি কার্টে যুক্ত করে।</div>
+    </div>
+
+    <div class="qna-card">
+      <div class="qna-question">প্রশ্ন ৫: গিটহাবে লাইভ করার সময় কি কোনো বিশেষ কনফিগারেশন করতে হয়েছে?</div>
+      <div class="qna-answer"><strong>উত্তর:</strong> হ্যাঁ স্যার, গিটহাব পেজে সাব-পাথে সাইট রান হওয়ার কারণে Vite কনফিগারেশনে base: "./" রিলেটিভ পাথ সেট করা হয়েছে। পাশাপাশি গিটহাবে পুশ করার সাথে সাথে সাইটটি লাইভ করার জন্য আমরা GitHub Actions অটোমেশন ওয়ার্কফ্লো এবং gh-pages ব্রাঞ্চ ডেপ্লয়মেন্ট ব্যবহার করেছি।</div>
+    </div>
+
+    <div class="qna-card">
+      <div class="qna-question">প্রশ্ন ৬: অ্যাপটির এআই ফিচারের কী প্রয়োজনীয়তা?</div>
+      <div class="qna-answer"><strong>উত্তর:</strong> মুদি দোকানদারদের প্রতিদিন পাইকারি বাজার দর ওঠানামা নিয়ে সচেতন থাকতে হয়। এআই উপদেষ্টা দোকানদারকে পণ্য মজুতের সেরা সময়, কোন পণ্যে বেশি মার্জিন পাওয়া সম্ভব এবং বকেয়া টাকা আদায়ের কৌশল সম্পর্কে সরাসরি বাংলায় পরামর্শ দেয়।</div>
+    </div>
+
+    <div class="qna-card">
+      <div class="qna-question">প্রশ্ন ৭: এই অ্যাপটি কি সাধারণ অ্যান্ড্রয়েড ফোনে কোনো ইনস্টল ছাড়াই চলবে?</div>
+      <div class="qna-answer"><strong>উত্তর:</strong> হ্যাঁ স্যার, এটি একটি Progressive Web App (PWA) স্ট্যান্ডার্ড মেনে তৈরি। মোবাইল ক্রোম ব্রাউজারে ঢুকে যেকোনো দোকানদার এটি ব্রাউজ করতে পারবেন এবং চাইলে "Add to Home Screen" দিয়ে সাধারণ অ্যান্ড্রয়েড অ্যাপের মতো হোমস্ক্রিনে আইকন বসিয়ে ব্যবহার করতে পারবেন।</div>
+    </div>
+
+    <div class="qna-card">
+      <div class="qna-question">প্রশ্ন ৮: দোকানে বিদ্যুৎ বা নেট না থাকলে প্রিন্টার থেকে মেমো দেওয়া যাবে?</div>
+      <div class="qna-answer"><strong>উত্তর:</strong> হ্যাঁ, সম্পূর্ণ ক্যাশ কাউন্টার ও রসিদ অফলাইনে কাজ করে। ব্লুটুথ বা ইউএসবি থার্মাল প্রিন্টারের সাথে কানেক্ট থাকলে অফলাইনেই ২ ইঞ্চি বা ৩ ইঞ্চি পিওএস ক্যাশ মেমো প্রিন্ট করা যায়।</div>
+    </div>
+
+    <div class="qna-card">
+      <div class="qna-question">প্রশ্ন ৯: ইসলামিক ব্যবসায়িক রুলস ও মাসআলা সেকশন কেন রাখা হয়েছে?</div>
+      <div class="qna-answer"><strong>উত্তর:</strong> সততা ও পরিমাপে সঠিকতা ব্যবসার অন্যতম মূল নীতি। ওজনে কম না দেওয়া, মেয়াদোত্তীর্ণ পণ্য বিক্রি না করা, মজুদদারি নিষিদ্ধ হওয়া সংক্রান্ত কোরআন ও হাদিসের বিশুদ্ধ তথ্য সন্নিবেশ করা হয়েছে যাতে ব্যবসায় বরকত ও সততা বজায় থাকে।</div>
+    </div>
+
+    <div class="qna-card">
+      <div class="qna-question">প্রশ্ন ১০: ভবিষ্যতে এই প্রজেক্টের পরবর্তী পরিকল্পনা (Future Scope) কী?</div>
+      <div class="qna-answer"><strong>উত্তর:</strong> ভবিষ্যতে আমরা ক্লাউড মাল্টি-ডিভাইস সিঙ্ক, সরাসরি এসএমএস গেটওয়ে ইন্টিগ্রেশন এবং আরও অ্যাডভান্সড বারকোড ইনভেন্টরি স্ক্যানিং ডিভাইস সংযোগ করার পরিকল্পনা রেখেছি।</div>
+    </div>
+
+    <div style="text-align: center; margin-top: 32px; padding-top: 16px; border-top: 1px dashed #DEC8B3; font-size: 13px; color: #7A6E65;">
+      ✨ সফল প্রেজেন্টেশন ও ভাইভার শুভকামনা! — <strong>মুদির দোকান খাতা (Grocery Khata)</strong>
+    </div>
+
+  </div>
+
+</body>
+</html>
